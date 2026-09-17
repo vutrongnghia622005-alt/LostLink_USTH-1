@@ -5,4 +5,4 @@ window.LOSTLINK_API_URL = (
     location.hostname === '127.0.0.1'
 )
     ? 'http://localhost:3000'
-    : 'https://lostlink-backend-rgw6.onrender.com';
+    : 'https://lostlink-usth-1.onrender.com';
