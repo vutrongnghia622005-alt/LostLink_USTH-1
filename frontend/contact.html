@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Liên hệ | Lost&Found USTH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="asset/css/base.css" />
+<link rel="stylesheet" href="asset/css/main.css" />
+
+<link rel="stylesheet" href="asset/css/portal-features.css" />
+<link rel="stylesheet" href="asset/css/portal-complete.css" />
+<link rel="stylesheet" href="asset/css/lostlink.css">
+</head>
+<body class="lostlink"><header class="site-header">
+    <div class="container header-inner">
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Lost&Found USTH - Trang chủ"
+      >
+        <img
+          class="brand-logo"
+          src="asset/images/brand/usth-lostfound-logo.png"
+          alt="USTH Lost&Found"
+          onerror="this.style.display='none'"
+        />
+
+        <span class="brand-text">
+          <span class="brand-title">
+            <strong>USTH</strong> Lost&amp;Found
+          </span>
+
+          <span class="brand-subtitle">
+            Kết nối cộng đồng sinh viên
+          </span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNavigation" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a href="lost.html">Tin thất lạc</a>
+        <a href="found.html">Tin nhặt được</a>
+        
+        <a class="active" href="contact.html">Liên hệ</a>
+      </nav>
+
+      <div class="header-actions"><details class="utility-menu"><summary aria-label="Mở tiện ích"><i data-lucide="grid-2x2"></i><span>Tiện ích</span></summary><div class="utility-links"><a href="my-posts.html">Tin của tôi</a><a href="search.html">Tra cứu tài sản</a><a href="campus-map.html">Bản đồ trường</a><a href="claims.html">Yêu cầu nhận đồ</a><a href="claim-status.html">Tra cứu yêu cầu</a><a href="feedback-status.html">Tra cứu phản hồi</a><a href="security-report.html">Báo cáo an ninh</a><a href="security-center.html">Theo dõi sự việc</a><a href="admin/login.html">Quản trị</a></div></details>
+
+        <a class="icon-btn" href="search.html" aria-label="Tìm kiếm"><i data-lucide="search"></i></a>
+
+        <a class="btn btn-primary" href="post.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 20h4l10.5-10.5a2.1 2.1 0 0 0-4-4L4 16v4Z"></path>
+            <path d="m13.5 6.5 4 4"></path>
+          </svg>
+          Đăng tin
+        </a>
+
+        <button class="menu-btn" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="mainNavigation"><i data-lucide="menu"></i></button>
+
+      </div>
+    </div>
+
+    
+  </header><main><section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="index.html">Trang chủ</a><span>/</span><span>Liên hệ</span></div><span class="eyebrow">HỖ TRỢ CỘNG ĐỒNG</span><h1>Liên hệ Lost&Found USTH</h1><p>Gửi câu hỏi hoặc phản hồi để nhóm hỗ trợ cải thiện trải nghiệm tìm và trao trả đồ thất lạc.</p></div></section><section class="container contact-layout"><div class="contact-card"><h2>Thông tin liên hệ</h2><p>Vui lòng sử dụng các kênh bên dưới cho những vấn đề liên quan đến bài đăng hoặc sử dụng hệ thống.</p><div class="contact-info"><div class="contact-line"><i data-lucide="mail"></i><span>lostfound@usth.edu.vn</span></div><div class="contact-line"><i data-lucide="map-pin"></i><span>USTH - 18 Hoàng Quốc Việt, Hà Nội</span></div><div class="contact-line"><i data-lucide="clock"></i><span>Thứ 2 - Thứ 6 · 08:30 - 17:00</span></div></div><h2 style="margin-top:28px">Gửi phản hồi cho hệ thống</h2><p>Phản hồi này sẽ được chuyển vào khu vực quản trị để Admin xem và xử lý.</p><form id="systemFeedbackForm" class="field-grid"><div class="field"><label>Họ tên</label><input id="systemFeedbackName" class="form-control" placeholder="Tên của bạn" required></div><div class="field"><label>Email</label><input id="systemFeedbackEmail" class="form-control" type="email" placeholder="you@usth.edu.vn" required></div><div class="field full"><label>Chủ đề</label><select id="systemFeedbackSubject" class="form-control" required><option value="">Chọn chủ đề</option><option>Góp ý chức năng</option><option>Báo lỗi website</option><option>Hỗ trợ sử dụng</option><option>Góp ý giao diện</option><option>Khác</option></select></div><div class="field full"><label>Nội dung</label><textarea id="systemFeedbackMessage" class="form-textarea" placeholder="Nhập nội dung cần hỗ trợ..." required></textarea></div><div id="systemFeedbackStatus" class="field full" style="display:none"></div><div class="field full feedback-form-actions"><button class="btn btn-primary" type="submit"><i data-lucide="send"></i>Gửi phản hồi</button><a class="btn btn-secondary" href="feedback-status.html"><i data-lucide="search-check"></i>Kiểm tra phản hồi</a></div></form></div><div class="contact-card"><h2>Câu hỏi thường gặp</h2><div class="faq"><div class="faq-item"><h3>Tôi cần làm gì khi mất đồ?</h3><p>Kiểm tra danh sách tin nhặt được trước, sau đó đăng tin thất lạc với địa điểm và thời gian cụ thể.</p></div><div class="faq-item"><h3>Tôi nhặt được đồ thì đăng ở đâu?</h3><p>Chọn “Đăng tin”, chuyển loại tin sang FOUND - Nhặt được đồ và nhập thông tin nhận dạng.</p></div><div class="faq-item"><h3>Làm sao sửa hoặc xóa bài?</h3><p>Dùng mã quản lý nhận được sau khi đăng tin và truy cập trang “Tin của tôi”.</p></div><div class="faq-item"><h3>Khi đã tìm thấy đồ thì sao?</h3><p>Đánh dấu bài đăng là hoàn tất để tin không tiếp tục xuất hiện trong danh sách đang hoạt động.</p></div></div></div></section></main><footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="index.html"><img class="footer-logo" src="asset/images/brand/usth-lostfound-logo.png" alt="USTH"><div><strong>USTH Lost&amp;Found</strong><p>Kết nối để những giá trị được trở lại.</p></div></a><nav class="footer-nav" aria-label="Liên kết cuối trang"><a href="lost.html">Tin thất lạc</a><a href="found.html">Tin nhặt được</a><a href="contact.html">Liên hệ</a><a href="my-posts.html">Tin của tôi</a></nav><div class="footer-right"><small>© 2026 Lost&amp;Found USTH.<br>Dành cho cộng đồng sinh viên USTH.</small></div></div></footer><script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+<script src="asset/js/config.js"></script>
+<script src="asset/js/api.js"></script>
+<script src="asset/js/auth.js"></script>
+<script src="asset/js/main.js"></script>
+<script src="asset/js/portal-features.js"></script>
+<script src="asset/js/portal-complete.js"></script>
+<script src="asset/js/lostlink-ui.js"></script>
+</body></html>

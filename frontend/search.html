@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="asset/css/base.css"><link rel="stylesheet" href="asset/css/main.css"><link rel="stylesheet" href="asset/css/portal-features.css"><link rel="stylesheet" href="asset/css/portal-complete.css"><title>Tra cứu tài sản | Lost&Found USTH</title><link rel="stylesheet" href="asset/css/lostlink.css">
+</head><body class="lostlink"><header class="site-header">
+    <div class="container header-inner">
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Lost&Found USTH - Trang chủ"
+      >
+        <img
+          class="brand-logo"
+          src="asset/images/brand/usth-lostfound-logo.png"
+          alt="USTH Lost&Found"
+          onerror="this.style.display='none'"
+        />
+
+        <span class="brand-text">
+          <span class="brand-title">
+            <strong>USTH</strong> Lost&amp;Found
+          </span>
+
+          <span class="brand-subtitle">
+            Kết nối cộng đồng sinh viên
+          </span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNavigation" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a href="lost.html">Tin thất lạc</a>
+        <a href="found.html">Tin nhặt được</a>
+        
+        <a href="contact.html">Liên hệ</a>
+      </nav>
+
+      <div class="header-actions"><details class="utility-menu"><summary aria-label="Mở tiện ích"><i data-lucide="grid-2x2"></i><span>Tiện ích</span></summary><div class="utility-links"><a href="my-posts.html">Tin của tôi</a><a href="search.html">Tra cứu tài sản</a><a href="campus-map.html">Bản đồ trường</a><a href="claims.html">Yêu cầu nhận đồ</a><a href="claim-status.html">Tra cứu yêu cầu</a><a href="feedback-status.html">Tra cứu phản hồi</a><a href="security-report.html">Báo cáo an ninh</a><a href="security-center.html">Theo dõi sự việc</a><a href="admin/login.html">Quản trị</a></div></details>
+
+        <a class="icon-btn" href="search.html" aria-label="Tìm kiếm"><i data-lucide="search"></i></a>
+
+        <a class="btn btn-primary" href="post.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 20h4l10.5-10.5a2.1 2.1 0 0 0-4-4L4 16v4Z"></path>
+            <path d="m13.5 6.5 4 4"></path>
+          </svg>
+          Đăng tin
+        </a>
+
+        <button class="menu-btn" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="mainNavigation"><i data-lucide="menu"></i></button>
+
+      </div>
+    </div>
+
+    
+  </header><main><section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="index.html">Trang chủ</a><span>/</span><span>Tra cứu</span></div><span class="eyebrow">SMART SEARCH</span><h1>Tra cứu tài sản toàn trường</h1><p>Tìm theo từ khóa, danh mục, địa điểm, trạng thái và tài sản giá trị cao trên toàn hệ thống.</p></div></section><section class="search-page"><div class="container"><section class="search-control-card"><div class="search-control-top"><input class="form-control" id="completeSearchQuery" placeholder="Tìm tên đồ, mô tả, mã bài, phòng hoặc tòa nhà..."><select class="form-control" id="completeSearchCategory"><option value="">Tất cả danh mục</option><option>Giấy tờ tùy thân</option><option>Thiết bị điện tử</option><option>Chìa khóa & Thẻ từ</option><option>Túi xách, balo</option><option>Ví, tiền bạc</option><option>Sách vở & Dụng cụ học tập</option><option>Phụ kiện cá nhân</option><option>Quần áo</option><option>Thiết bị thể thao</option><option>Khác</option></select><select class="form-control" id="completeSearchLocation"><option value="">Tất cả địa điểm</option><option value="A21">A21</option><option value="A11">A11 / Thư viện</option><option value="A10">A10</option><option value="A2">A2 / Căng tin</option><option value="Bãi xe">Bãi xe</option><option value="Cổng">Cổng trường</option></select><select class="form-control" id="completeSearchStatus"><option value="">LOST + FOUND</option><option value="LOST">Chỉ thất lạc</option><option value="FOUND">Chỉ nhặt được</option></select><label class="search-high-toggle"><input type="checkbox" id="completeSearchHigh">Giá trị cao</label></div><div class="search-toolbar-bottom"><div><strong id="completeSearchCount">0 tài sản</strong><span> trong hệ thống</span></div><div style="display:flex;gap:8px"><select class="form-control" id="completeSearchSort" style="min-width:140px"><option value="newest">Mới nhất</option><option value="oldest">Cũ nhất</option><option value="title">Theo tên</option></select><button class="btn btn-secondary" id="completeSearchReset" type="button"><i data-lucide="rotate-ccw"></i>Đặt lại</button></div></div></section><div id="completeSearchResults" class="search-results-list"></div></div></section></main><footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="index.html"><img class="footer-logo" src="asset/images/brand/usth-lostfound-logo.png" alt="USTH"><div><strong>USTH Lost&amp;Found</strong><p>Kết nối để những giá trị được trở lại.</p></div></a><nav class="footer-nav" aria-label="Liên kết cuối trang"><a href="lost.html">Tin thất lạc</a><a href="found.html">Tin nhặt được</a><a href="contact.html">Liên hệ</a><a href="my-posts.html">Tin của tôi</a></nav><div class="footer-right"><small>© 2026 Lost&amp;Found USTH.<br>Dành cho cộng đồng sinh viên USTH.</small></div></div></footer><script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+<script src="asset/js/config.js"></script>
+<script src="asset/js/catalog.js"></script>
+<script src="asset/js/api.js"></script>
+<script src="asset/js/auth.js"></script>
+<script src="asset/js/main.js"></script><script src="asset/js/portal-features.js"></script><script src="asset/js/portal-complete.js"></script><script src="asset/js/lostlink-ui.js"></script>
+</body></html>

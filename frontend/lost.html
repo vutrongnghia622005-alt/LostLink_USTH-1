@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tin thất lạc | Lost&amp;Found USTH</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="asset/css/base.css" rel="stylesheet">
+<link href="asset/css/main.css" rel="stylesheet">
+
+<link href="asset/css/portal-features.css" rel="stylesheet"/>
+<link href="asset/css/portal-complete.css" rel="stylesheet"/>
+<link rel="stylesheet" href="asset/css/lostlink.css">
+</head>
+<body class="lostlink"><header class="site-header">
+    <div class="container header-inner">
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Lost&Found USTH - Trang chủ"
+      >
+        <img
+          class="brand-logo"
+          src="asset/images/brand/usth-lostfound-logo.png"
+          alt="USTH Lost&Found"
+          onerror="this.style.display='none'"
+        />
+
+        <span class="brand-text">
+          <span class="brand-title">
+            <strong>USTH</strong> Lost&amp;Found
+          </span>
+
+          <span class="brand-subtitle">
+            Kết nối cộng đồng sinh viên
+          </span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNavigation" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a class="active" href="lost.html">Tin thất lạc</a>
+        <a href="found.html">Tin nhặt được</a>
+        
+        <a href="contact.html">Liên hệ</a>
+      </nav>
+
+      <div class="header-actions"><details class="utility-menu"><summary aria-label="Mở tiện ích"><i data-lucide="grid-2x2"></i><span>Tiện ích</span></summary><div class="utility-links"><a href="my-posts.html">Tin của tôi</a><a href="search.html">Tra cứu tài sản</a><a href="campus-map.html">Bản đồ trường</a><a href="claims.html">Yêu cầu nhận đồ</a><a href="claim-status.html">Tra cứu yêu cầu</a><a href="feedback-status.html">Tra cứu phản hồi</a><a href="security-report.html">Báo cáo an ninh</a><a href="security-center.html">Theo dõi sự việc</a><a href="admin/login.html">Quản trị</a></div></details>
+
+        <a class="icon-btn" href="search.html" aria-label="Tìm kiếm"><i data-lucide="search"></i></a>
+
+        <a class="btn btn-primary" href="post.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 20h4l10.5-10.5a2.1 2.1 0 0 0-4-4L4 16v4Z"></path>
+            <path d="m13.5 6.5 4 4"></path>
+          </svg>
+          Đăng tin
+        </a>
+
+        <button class="menu-btn" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="mainNavigation"><i data-lucide="menu"></i></button>
+
+      </div>
+    </div>
+
+    
+  </header><main class="lost-main">
+    <section class="page-section">
+
+      <div class="container lost-content">
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+          <a href="index.html">Trang chủ</a>
+          <span>/</span>
+          <span>Tin thất lạc</span>
+        </div>
+
+        <!-- Heading -->
+        <div class="page-heading">
+          <h1>Tin thất lạc</h1>
+          <p>Những đồ vật đang được sinh viên USTH tìm kiếm.</p>
+        </div>
+
+
+        <!-- Search -->
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="6.5"></circle>
+            <path d="M16 16l4.5 4.5"></path>
+          </svg>
+
+          <input
+            id="pageSearch" aria-label="Tìm theo tên đồ vật, mô tả"
+            type="search"
+            placeholder="Tìm theo tên đồ vật, mô tả..."
+            autocomplete="off"
+          />
+        </div>
+
+
+        <!-- ================= FILTERS ================= -->
+        <div class="filter-toolbar">
+
+          <!-- Category -->
+          <label class="filter-box">
+            <span class="filter-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="4" y="4" width="6" height="6" rx="1"></rect>
+                <rect x="14" y="4" width="6" height="6" rx="1"></rect>
+                <rect x="4" y="14" width="6" height="6" rx="1"></rect>
+                <rect x="14" y="14" width="6" height="6" rx="1"></rect>
+              </svg>
+            </span>
+
+            <span class="filter-copy">
+              <span class="filter-label">Danh mục</span>
+
+              <select id="categoryFilter">
+                <option value="">Tất cả danh mục</option>
+                <option value="Giấy tờ tùy thân">Giấy tờ tùy thân</option>
+                <option value="Thiết bị điện tử">Thiết bị điện tử</option>
+                <option value="Túi xách, balo">Túi xách, balo</option>
+                <option value="Ví, tiền bạc">Ví, tiền bạc</option>
+                <option value="Sách vở">Sách vở</option>
+                <option value="Phụ kiện">Phụ kiện</option>
+                <option value="Quần áo">Quần áo</option>
+                <option value="Khác">Khác</option>
+              </select>
+            </span>
+          </label>
+
+
+          <!-- Location -->
+          <label class="filter-box">
+            <span class="filter-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 21s6-5.5 6-11a6 6 0 1 0-12 0c0 5.5 6 11 6 11Z"
+                ></path>
+                <circle cx="12" cy="10" r="2"></circle>
+              </svg>
+            </span>
+
+            <span class="filter-copy">
+              <span class="filter-label">Địa điểm</span>
+
+              <select id="locationFilter">
+                <option value="">Tất cả địa điểm</option>
+                <option>Tòa 2A</option>
+                <option>Tòa 2B</option>
+                <option>Tòa 2C</option>
+                <option>Tòa 2H</option>
+                <option>Tòa A21 - USTH</option>
+                <option>Tòa A10 - Tầng 4</option>
+                <option>Tòa A11</option>
+                <option>Tòa A12</option>
+                <option>Tòa A13</option>
+                <option>Khu vực khác</option>
+              </select>
+            </span>
+          </label>
+
+
+          <!-- Time -->
+          <label class="filter-box">
+            <span class="filter-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="4" y="5.5" width="16" height="14" rx="2"></rect>
+                <path d="M8 3v5M16 3v5M4 10h16"></path>
+              </svg>
+            </span>
+
+            <span class="filter-copy">
+              <span class="filter-label">Thời gian</span>
+
+              <select id="timeFilter">
+                <option value="">Tất cả thời gian</option>
+                <option value="today">Hôm nay</option>
+                <option value="3days">3 ngày gần đây</option>
+                <option value="7days">7 ngày gần đây</option>
+                <option value="30days">30 ngày gần đây</option>
+              </select>
+            </span>
+          </label>
+
+
+          <!-- Sort -->
+          <label class="filter-box">
+            <span class="filter-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 4v16M5 7l3-3 3 3M16 20V4M13 17l3 3 3-3"></path>
+              </svg>
+            </span>
+
+            <span class="filter-copy">
+              <span class="filter-label">Sắp xếp</span>
+
+              <select id="sortOrder">
+                <option value="newest">Mới nhất</option>
+                <option value="oldest">Cũ nhất</option>
+                <option value="title-asc">Tên A → Z</option>
+              </select>
+            </span>
+          </label>
+
+
+          <!-- Reset -->
+          <button
+            class="reset-button"
+            id="resetFilters"
+            type="button"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 12a8 8 0 1 0 2.3-5.7L4 8"></path>
+              <path d="M4 4v4h4"></path>
+            </svg>
+
+            Xóa bộ lọc
+          </button>
+
+        </div>
+
+
+        <!-- Result count -->
+        <div
+          class="result-meta"
+          id="resultCount"
+        ></div>
+
+
+        <!-- Cards -->
+        <section
+          class="posts-grid listing-grid"
+          id="listingGrid"
+          aria-live="polite"
+        ></section>
+
+
+        <!-- Empty state -->
+        <section
+          class="empty-state"
+          id="emptyResults"
+          hidden
+        >
+          <div class="empty-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="6.5"></circle>
+              <path d="M16 16l4.5 4.5"></path>
+            </svg>
+          </div>
+
+          <h2>Không tìm thấy tin phù hợp</h2>
+
+          <p>
+            Hãy thử đổi từ khóa hoặc xóa bớt bộ lọc.
+          </p>
+
+          <button
+            class="btn btn-secondary"
+            id="emptyReset"
+            type="button"
+          >
+            Xóa bộ lọc
+          </button>
+        </section>
+
+
+        <!-- Pagination -->
+        <nav
+          class="pagination"
+          id="pagination"
+          aria-label="Phân trang"
+        ></nav>
+
+      </div>
+    </section>
+  </main><footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="index.html"><img class="footer-logo" src="asset/images/brand/usth-lostfound-logo.png" alt="USTH"><div><strong>USTH Lost&amp;Found</strong><p>Kết nối để những giá trị được trở lại.</p></div></a><nav class="footer-nav" aria-label="Liên kết cuối trang"><a href="lost.html">Tin thất lạc</a><a href="found.html">Tin nhặt được</a><a href="contact.html">Liên hệ</a><a href="my-posts.html">Tin của tôi</a></nav><div class="footer-right"><small>© 2026 Lost&amp;Found USTH.<br>Dành cho cộng đồng sinh viên USTH.</small></div></div></footer><script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+<script src="asset/js/config.js"></script>
+<script src="asset/js/catalog.js"></script>
+<script src="asset/js/api.js"></script>
+<script src="asset/js/auth.js"></script>
+<script src="asset/js/main.js"></script>
+<script src="asset/js/portal-features.js"></script>
+<script src="asset/js/portal-complete.js"></script>
+<script src="asset/js/lostlink-ui.js"></script>
+</body></html>

@@ -1,0 +1,14 @@
+/* Shared LostLink identity; administration keeps its existing workflows. */
+:root { --admin-blue:#0867e8; --admin-navy:#06134f; --admin-border:#dbe4f0; --admin-radius:10px; --admin-shadow:0 4px 14px rgba(17,42,91,.06); }
+body { font-family:Inter,Arial,sans-serif; background:#eef3f8; }
+.admin-sidebar { background:#fff; color:#15234f; border-right:1px solid var(--admin-border); }
+.admin-brand { border-bottom-color:var(--admin-border); }
+.admin-brand span, .admin-sidebar-bottom a, .admin-sidebar-bottom button, .admin-nav a { color:#667390; }
+.admin-nav a.active, .admin-nav a:hover { color:var(--admin-blue); background:#eef6ff; }
+.admin-sidebar-bottom { border-color:var(--admin-border); }
+.admin-topbar, .admin-card, .stat-card, .login-card { background:#fff; border-color:var(--admin-border); box-shadow:var(--admin-shadow); border-radius:10px; backdrop-filter:none; }
+.admin-topbar { border-radius:0; }
+.admin-btn, .admin-nav a, .stat-icon { border-radius:7px; }
+.admin-btn.primary { background:var(--admin-blue); }
+body::before, body::after { content:none; }
+.login-page { background:linear-gradient(rgba(240,247,254,.55),rgba(240,247,254,.55)),url('../images/usth-campus.jpg') center/cover fixed; }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Đăng tin | Lost&Found USTH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="asset/css/base.css" />
+<link rel="stylesheet" href="asset/css/main.css" />
+
+<link rel="stylesheet" href="asset/css/portal-features.css" />
+<link rel="stylesheet" href="asset/css/portal-complete.css" />
+<link rel="stylesheet" href="asset/css/lostlink.css">
+</head>
+<body class="lostlink"><header class="site-header">
+    <div class="container header-inner">
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Lost&Found USTH - Trang chủ"
+      >
+        <img
+          class="brand-logo"
+          src="asset/images/brand/usth-lostfound-logo.png"
+          alt="USTH Lost&Found"
+          onerror="this.style.display='none'"
+        />
+
+        <span class="brand-text">
+          <span class="brand-title">
+            <strong>USTH</strong> Lost&amp;Found
+          </span>
+
+          <span class="brand-subtitle">
+            Kết nối cộng đồng sinh viên
+          </span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNavigation" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a href="lost.html">Tin thất lạc</a>
+        <a href="found.html">Tin nhặt được</a>
+        
+        <a href="contact.html">Liên hệ</a>
+      </nav>
+
+      <div class="header-actions"><details class="utility-menu"><summary aria-label="Mở tiện ích"><i data-lucide="grid-2x2"></i><span>Tiện ích</span></summary><div class="utility-links"><a href="my-posts.html">Tin của tôi</a><a href="search.html">Tra cứu tài sản</a><a href="campus-map.html">Bản đồ trường</a><a href="claims.html">Yêu cầu nhận đồ</a><a href="claim-status.html">Tra cứu yêu cầu</a><a href="feedback-status.html">Tra cứu phản hồi</a><a href="security-report.html">Báo cáo an ninh</a><a href="security-center.html">Theo dõi sự việc</a><a href="admin/login.html">Quản trị</a></div></details>
+
+        <a class="icon-btn" href="search.html" aria-label="Tìm kiếm"><i data-lucide="search"></i></a>
+
+        <a class="btn btn-primary" href="post.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 20h4l10.5-10.5a2.1 2.1 0 0 0-4-4L4 16v4Z"></path>
+            <path d="m13.5 6.5 4 4"></path>
+          </svg>
+          Đăng tin
+        </a>
+
+        <button class="menu-btn" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="mainNavigation"><i data-lucide="menu"></i></button>
+
+      </div>
+    </div>
+
+    
+  </header><main><section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="index.html">Trang chủ</a><span>/</span><span>Đăng tin</span></div><span class="eyebrow">CHIA SẺ THÔNG TIN</span><h1>Đăng tin mới</h1><p>Cung cấp thông tin rõ ràng để tăng khả năng tìm lại đồ hoặc tìm đúng chủ sở hữu.</p></div></section><section class="form-page"><div class="container form-shell"><form class="form-card" id="postForm"><h2>Thông tin bài đăng</h2><p class="form-subtitle">Các trường có dấu * là bắt buộc.</p><div class="form-section"><h3>1. Thông tin cơ bản</h3><div class="type-options"><label class="type-option"><input type="radio" name="type" value="LOST" checked><div><strong>LOST - Cần tìm đồ</strong><div style="color:#77849a;font-size:13px">Tôi bị mất đồ và cần tìm lại</div></div></label><label class="type-option"><input type="radio" name="type" value="FOUND"><div><strong>FOUND - Nhặt được đồ</strong><div style="color:#77849a;font-size:13px">Tôi nhặt được đồ và muốn trả lại</div></div></label></div></div><div class="form-section"><div class="field-grid"><div class="field full"><label>Tiêu đề <span class="required">*</span></label><input class="form-control" id="postTitle" name="title" required minlength="10" placeholder="Ví dụ: Mất thẻ sinh viên ở thư viện"></div><div class="field"><label>Danh mục <span class="required">*</span></label><select class="form-control" id="postCategory" name="category" required><option value="">Chọn danh mục</option><option>Giấy tờ tùy thân</option><option>Thiết bị điện tử</option><option>Chìa khóa & Thẻ từ</option><option>Túi xách, balo</option><option>Ví, tiền bạc</option><option>Sách vở & Dụng cụ học tập</option><option>Phụ kiện cá nhân</option><option>Quần áo</option><option>Thiết bị thể thao</option><option>Khác</option></select></div><div class="field"><label>Địa điểm <span class="required">*</span></label><select class="form-control" id="postLocation" name="location" required><option value="">Chọn địa điểm</option><option>Tòa A21 - USTH Main Building</option><option>Thư viện A11</option><option>Tòa A10 - CNTT</option><option>Căng tin A2</option><option>Tòa A1</option><option>Tòa A4</option><option>Tòa A18</option><option>Tòa A22</option><option>Hồ sinh thái trung tâm</option><option>Cổng 18 Hoàng Quốc Việt</option><option>Cổng Phùng Chí Kiên</option><option>Bãi xe</option><option>Khác</option></select></div><div class="field"><label>Thời gian xảy ra <span class="required">*</span></label><input class="form-control" id="postEventTime" name="eventTime" type="datetime-local" required></div><div class="field"><label>Địa điểm chi tiết</label><input class="form-control" id="postLocationDetail" name="locationDetail" placeholder="Ví dụ: Phòng A102, tầng 2"></div><div class="field full"><label>Mô tả chi tiết <span class="required">*</span></label><textarea class="form-textarea" id="postDescription" name="description" required placeholder="Màu sắc, đặc điểm nhận dạng, tình trạng..."></textarea></div></div></div><div class="form-section"><h3>2. Hình ảnh</h3><label class="upload-box" for="imageInput"><i data-lucide="upload-cloud"></i><strong>Kéo ảnh vào đây hoặc chọn tệp</strong><div style="color:#7a879d;font-size:13px;margin-top:5px">JPG, PNG, WEBP · 1 ảnh · tối đa 5 MB</div><input id="imageInput" type="file" accept="image/*" hidden><img id="imagePreview" style="display:none;max-height:220px;margin:14px auto 0;border-radius:8px" alt="Xem trước ảnh"></label></div><div class="form-section portal-found-security" id="foundSecuritySection" hidden>
+<h3>3. Xác minh & lưu giữ tài sản</h3>
+<div class="private-note"><strong>Dành cho tin FOUND:</strong> các câu hỏi dưới đây không hiển thị đáp án công khai. Người nhận phải trả lời để Security Desk đối chiếu quyền sở hữu.</div>
+<div class="field-grid" style="margin-top:15px">
+  <div class="field"><label>Điểm lưu giữ tài sản</label><input class="form-control" id="postCustodyLocation" placeholder="Ví dụ: Bàn bảo vệ A21 - Phòng 102"></div>
+  <div class="field"><label>Người báo / người nhặt</label><input class="form-control" id="postReporterName" placeholder="Họ tên hoặc Bộ phận bảo vệ"></div>
+  <div class="field"><label>Vai trò người báo</label><select class="form-control" id="postReporterRole"><option value="student">Sinh viên</option><option value="staff">Cán bộ</option><option value="lecturer">Giảng viên</option><option value="security">Bảo vệ</option></select></div>
+  <div class="field portal-check-field"><label class="portal-checkbox"><input type="checkbox" id="postHighValue"><span><strong>Tài sản giá trị cao</strong><small>Laptop, điện thoại, ví/giấy tờ quan trọng...</small></span></label></div>
+  <div class="field full"><label>Câu hỏi xác minh 1 <span class="required">*</span></label><input class="form-control" id="postChallenge1" placeholder="Ví dụ: Vỏ máy có sticker/hình dán gì?" data-found-required></div>
+  <div class="field full"><label>Gợi ý cho Security Desk</label><input class="form-control" id="postChallengeHint1" placeholder="Ví dụ: cần mô tả ít nhất 2 sticker; không hiển thị cho người nhận"></div>
+  <div class="field full"><label>Câu hỏi xác minh 2</label><input class="form-control" id="postChallenge2" placeholder="Ví dụ: Trong ví có giấy tờ/vật gì đặc biệt?"></div>
+  <div class="field full"><label>Câu hỏi xác minh 3</label><input class="form-control" id="postChallenge3" placeholder="Ví dụ: 4 số cuối serial hoặc đặc điểm bí mật khác"></div>
+</div></div><div class="form-section"><h3>4. Thông tin liên hệ</h3><div class="private-note">Thông tin này sẽ hiển thị trên trang chi tiết để người nhặt/chủ sở hữu có thể liên hệ với bạn.</div><div class="field-grid" style="margin-top:15px"><div class="field"><label>Số điện thoại / Zalo <span class="required">*</span></label><input class="form-control" id="postPhone" name="phone" required placeholder="09xx xxx xxx"></div><div class="field"><label>Email</label><input class="form-control" id="postEmail" name="email" type="email" placeholder="yourname@usth.edu.vn"></div></div></div><div class="form-actions"><a class="btn btn-secondary" href="index.html">Hủy</a><button class="btn btn-primary" id="postSubmitBtn" type="submit"><i data-lucide="send"></i><span id="postSubmitText">Đăng tin</span></button></div></form><aside><div class="side-card"><h3>Mẹo đăng tin hiệu quả</h3><ul class="tip-list"><li><i data-lucide="check-circle"></i><span>Tiêu đề ngắn gọn và rõ đồ vật.</span></li><li><i data-lucide="check-circle"></i><span>Ghi chính xác địa điểm, thời gian.</span></li><li><i data-lucide="check-circle"></i><span>Ảnh rõ nét giúp nhận dạng nhanh hơn.</span></li><li><i data-lucide="check-circle"></i><span>Không công khai thông tin nhạy cảm không cần thiết.</span></li></ul></div><div class="side-card" style="margin-top:16px"><h3>Quản lý bài đăng</h3><p style="color:#6d7890">Sau khi đăng thành công bạn sẽ nhận một mã quản lý để chỉnh sửa, hoàn tất hoặc xóa tin.</p><a class="btn btn-secondary" style="width:100%;margin-top:8px" href="my-posts.html">Tin của tôi</a></div></aside></div></section></main><footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="index.html"><img class="footer-logo" src="asset/images/brand/usth-lostfound-logo.png" alt="USTH"><div><strong>USTH Lost&amp;Found</strong><p>Kết nối để những giá trị được trở lại.</p></div></a><nav class="footer-nav" aria-label="Liên kết cuối trang"><a href="lost.html">Tin thất lạc</a><a href="found.html">Tin nhặt được</a><a href="contact.html">Liên hệ</a><a href="my-posts.html">Tin của tôi</a></nav><div class="footer-right"><small>© 2026 Lost&amp;Found USTH.<br>Dành cho cộng đồng sinh viên USTH.</small></div></div></footer><script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+<script src="asset/js/config.js"></script>
+<script src="asset/js/catalog.js"></script>
+<script src="asset/js/api.js"></script>
+<script src="asset/js/auth.js"></script>
+<script src="asset/js/main.js"></script>
+<script src="asset/js/portal-features.js"></script>
+<script src="asset/js/portal-complete.js"></script>
+<script src="asset/js/lostlink-ui.js"></script>
+</body></html>

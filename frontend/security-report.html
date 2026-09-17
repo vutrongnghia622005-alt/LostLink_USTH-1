@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Báo cáo an ninh | Lost&Found USTH</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="asset/css/base.css"><link rel="stylesheet" href="asset/css/main.css"><link rel="stylesheet" href="asset/css/portal-features.css"><link rel="stylesheet" href="asset/css/portal-complete.css" />
+<link rel="stylesheet" href="asset/css/lostlink.css">
+</head><body class="lostlink">
+<header class="site-header">
+    <div class="container header-inner">
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Lost&Found USTH - Trang chủ"
+      >
+        <img
+          class="brand-logo"
+          src="asset/images/brand/usth-lostfound-logo.png"
+          alt="USTH Lost&Found"
+          onerror="this.style.display='none'"
+        />
+
+        <span class="brand-text">
+          <span class="brand-title">
+            <strong>USTH</strong> Lost&amp;Found
+          </span>
+
+          <span class="brand-subtitle">
+            Kết nối cộng đồng sinh viên
+          </span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNavigation" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a href="lost.html">Tin thất lạc</a>
+        <a href="found.html">Tin nhặt được</a>
+        
+        <a href="contact.html">Liên hệ</a>
+      </nav>
+
+      <div class="header-actions"><details class="utility-menu"><summary aria-label="Mở tiện ích"><i data-lucide="grid-2x2"></i><span>Tiện ích</span></summary><div class="utility-links"><a href="my-posts.html">Tin của tôi</a><a href="search.html">Tra cứu tài sản</a><a href="campus-map.html">Bản đồ trường</a><a href="claims.html">Yêu cầu nhận đồ</a><a href="claim-status.html">Tra cứu yêu cầu</a><a href="feedback-status.html">Tra cứu phản hồi</a><a href="security-report.html">Báo cáo an ninh</a><a href="security-center.html">Theo dõi sự việc</a><a href="admin/login.html">Quản trị</a></div></details>
+
+        <a class="icon-btn" href="search.html" aria-label="Tìm kiếm"><i data-lucide="search"></i></a>
+
+        <a class="btn btn-primary" href="post.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 20h4l10.5-10.5a2.1 2.1 0 0 0-4-4L4 16v4Z"></path>
+            <path d="m13.5 6.5 4 4"></path>
+          </svg>
+          Đăng tin
+        </a>
+
+        <button class="menu-btn" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="mainNavigation"><i data-lucide="menu"></i></button>
+
+      </div>
+    </div>
+
+    
+  </header>
+<main><section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="index.html">Trang chủ</a><span>/</span><span>Báo cáo an ninh</span></div><span class="eyebrow">SECURITY REPORT</span><h1>Báo cáo hoạt động đáng ngờ</h1><p>Gửi nhanh thông tin liên quan tới giả mạo nhận đồ, can thiệp tài sản hoặc tình huống cần bàn trực hỗ trợ.</p></div></section><section class="security-report-page"><div class="container security-report-layout"><form class="security-report-card" id="securityReportForm"><span class="portal-kicker">GỬI TỚI SECURITY DESK</span><h2>Thông tin sự việc</h2><p>Với tình huống khẩn cấp ngoài đời thực, hãy liên hệ trực tiếp bảo vệ hoặc cơ quan có thẩm quyền.</p><div class="field-grid" style="margin-top:20px"><label class="field"><span>Loại báo cáo *</span><select class="form-control" id="securityCategory" required><option value="">Chọn loại</option><option value="fraudulent_claim">Nghi ngờ giả mạo nhận đồ</option><option value="theft_tampering">Can thiệp / lấy tài sản</option><option value="unsafe_behavior">Hành vi không an toàn</option><option value="other">Khác</option></select></label><label class="field"><span>Khu vực *</span><select class="form-control" id="securityLocation" required><option value="">Chọn khu vực</option><option>Khu A - Tòa nhà chính</option><option>Thư viện USTH</option><option>Phòng A21</option><option>Căng tin USTH</option><option>Bãi xe</option><option>Tòa A10</option></select></label><label class="field full"><span>Vị trí cụ thể *</span><input class="form-control" id="securitySpecificLocation" required placeholder="Ví dụ: trước cửa phòng A21, quầy thư viện..."></label><label class="field full"><span>Mô tả sự việc *</span><textarea class="form-textarea" id="securityDescription" required minlength="20" maxlength="900" placeholder="Mô tả ngắn gọn điều bạn quan sát được..."></textarea></label><div class="field full"><span style="display:block;margin-bottom:7px">Mức độ</span><div class="security-urgency"><label><input type="radio" name="securityUrgency" value="normal" checked> Bình thường · cần kiểm tra</label><label class="urgent"><input type="radio" name="securityUrgency" value="urgent"> Khẩn · cần chú ý ngay</label></div></div><label class="field full" style="display:flex;align-items:center;gap:8px"><input type="checkbox" id="securityAnonymous"> Gửi ẩn danh</label><div class="field-grid full" id="securityReporterFields"><label class="field"><span>Họ tên *</span><input class="form-control" id="securityReporterName" required></label><label class="field"><span>Liên hệ *</span><input class="form-control" id="securityReporterContact" required></label></div></div><div id="securityReportSuccess" class="security-success" hidden></div><div class="form-actions"><a class="btn btn-secondary" href="index.html">Hủy</a><button class="btn btn-primary" type="submit"><i data-lucide="shield-alert"></i>Gửi báo cáo</button></div></form><aside><div class="security-side-card"><h3>Khi nào nên dùng?</h3><ul><li>Có người cố nhận đồ nhưng thông tin không khớp.</li><li>Phát hiện tài sản bị mở, di chuyển hoặc lấy đi đáng ngờ.</li><li>Cần chuyển thông tin cho bàn trực để theo dõi.</li></ul></div><div class="security-side-card"><h3>Quy trình xử lý</h3><p>Báo cáo được gửi tới backend → Admin/Security Desk xem → cập nhật “đang điều tra”, “đã cử tuần tra” hoặc “đã xử lý”.</p></div><a class="btn btn-secondary" style="width:100%" href="campus-map.html"><i data-lucide="map"></i>Xem bản đồ campus</a></aside></div></section></main>
+<footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="index.html"><img class="footer-logo" src="asset/images/brand/usth-lostfound-logo.png" alt="USTH"><div><strong>USTH Lost&amp;Found</strong><p>Kết nối để những giá trị được trở lại.</p></div></a><nav class="footer-nav" aria-label="Liên kết cuối trang"><a href="lost.html">Tin thất lạc</a><a href="found.html">Tin nhặt được</a><a href="contact.html">Liên hệ</a><a href="my-posts.html">Tin của tôi</a></nav><div class="footer-right"><small>© 2026 Lost&amp;Found USTH.<br>Dành cho cộng đồng sinh viên USTH.</small></div></div></footer><script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+<script src="asset/js/config.js"></script>
+<script src="asset/js/api.js"></script>
+<script src="asset/js/auth.js"></script>
+<script src="asset/js/main.js"></script><script src="asset/js/portal-features.js"></script><script src="asset/js/portal-complete.js"></script>
+<script src="asset/js/lostlink-ui.js"></script>
+</body></html>

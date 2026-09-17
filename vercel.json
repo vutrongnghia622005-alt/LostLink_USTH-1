@@ -1,0 +1,22 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/frontend/index.html" },
+    { "source": "/index.html", "destination": "/frontend/index.html" },
+    { "source": "/lost.html", "destination": "/frontend/lost.html" },
+    { "source": "/found.html", "destination": "/frontend/found.html" },
+    { "source": "/search.html", "destination": "/frontend/search.html" },
+    { "source": "/detail.html", "destination": "/frontend/detail.html" },
+    { "source": "/post.html", "destination": "/frontend/post.html" },
+    { "source": "/my-posts.html", "destination": "/frontend/my-posts.html" },
+    { "source": "/claims.html", "destination": "/frontend/claims.html" },
+    { "source": "/claim-status.html", "destination": "/frontend/claim-status.html" },
+    { "source": "/contact.html", "destination": "/frontend/contact.html" },
+    { "source": "/feedback-status.html", "destination": "/frontend/feedback-status.html" },
+    { "source": "/security-report.html", "destination": "/frontend/security-report.html" },
+    { "source": "/security-center.html", "destination": "/frontend/security-center.html" },
+    { "source": "/campus-map.html", "destination": "/frontend/campus-map.html" },
+    { "source": "/success.html", "destination": "/frontend/success.html" },
+    { "source": "/asset/:path*", "destination": "/frontend/asset/:path*" },
+    { "source": "/admin/:path*", "destination": "/frontend/admin/:path*" }
+  ]
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đăng nhập Admin | Lost&Found USTH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../asset/css/admin.css">
+    <link rel="stylesheet" href="../asset/css/admin-features.css">
+    <link rel="stylesheet" href="../asset/css/admin-complete.css">
+    <link rel="stylesheet" href="../asset/css/admin-lostlink.css">
+</head>
+<body class="login-page">
+    <div class="login-card">
+        <div class="login-brand">
+            <img src="../asset/images/brand/usth-lostfound-logo.png" alt="USTH">
+            <h1>Lost&Found USTH Admin</h1>
+            <p>Khu vực quản trị hệ thống</p>
+        </div>
+
+        <form id="adminLoginForm">
+            <div class="login-field">
+                <label>Email quản trị</label>
+                <input id="adminEmail" type="email" required autocomplete="email">
+            </div>
+            <div class="login-field">
+                <label>Mật khẩu</label>
+                <input id="adminPassword" type="password" required autocomplete="current-password">
+            </div>
+            <div id="loginError" class="login-error">Không thể đăng nhập.</div>
+            <button class="login-submit" type="submit">Đăng nhập Admin</button>
+        </form>
+
+        <div class="login-hint">
+            Tài khoản Admin được tạo trong database bằng lệnh <code>npm run seed:admin</code>.
+            Mật khẩu không còn được hard-code trong frontend.
+        </div>
+
+        <p style="text-align:center;margin:18px 0 0">
+            <a href="../index.html" style="color:#155fc1">← Quay lại website</a>
+        </p>
+    </div>
+
+    <script src="../asset/js/config.js"></script>
+    <script src="../asset/js/api.js"></script>
+    <script src="../asset/js/admin.js"></script>
+</body>
+</html>

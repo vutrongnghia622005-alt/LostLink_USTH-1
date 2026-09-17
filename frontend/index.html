@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lost&Found USTH</title>
+  <meta
+    name="description"
+    content="Lost&Found USTH - nền tảng hỗ trợ sinh viên tìm lại đồ thất lạc và đăng tin đồ nhặt được."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="asset/css/base.css" />
+  <link rel="stylesheet" href="asset/css/main.css" />
+
+<link rel="stylesheet" href="asset/css/portal-features.css" />
+<link rel="stylesheet" href="asset/css/portal-complete.css" />
+<link rel="stylesheet" href="asset/css/lostlink.css">
+</head>
+<body class="lostlink">
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Lost&Found USTH - Trang chủ"
+      >
+        <img
+          class="brand-logo"
+          src="asset/images/brand/usth-lostfound-logo.png"
+          alt="USTH Lost&Found"
+          onerror="this.style.display='none'"
+        />
+
+        <span class="brand-text">
+          <span class="brand-title">
+            <strong>USTH</strong> Lost&amp;Found
+          </span>
+
+          <span class="brand-subtitle">
+            Kết nối cộng đồng sinh viên
+          </span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNavigation" aria-label="Điều hướng chính">
+        <a class="active" href="index.html">Trang chủ</a>
+        <a href="lost.html">Tin thất lạc</a>
+        <a href="found.html">Tin nhặt được</a>
+        
+        <a href="contact.html">Liên hệ</a>
+      </nav>
+
+      <div class="header-actions"><details class="utility-menu"><summary aria-label="Mở tiện ích"><i data-lucide="grid-2x2"></i><span>Tiện ích</span></summary><div class="utility-links"><a href="my-posts.html">Tin của tôi</a><a href="search.html">Tra cứu tài sản</a><a href="campus-map.html">Bản đồ trường</a><a href="claims.html">Yêu cầu nhận đồ</a><a href="claim-status.html">Tra cứu yêu cầu</a><a href="feedback-status.html">Tra cứu phản hồi</a><a href="security-report.html">Báo cáo an ninh</a><a href="security-center.html">Theo dõi sự việc</a><a href="admin/login.html">Quản trị</a></div></details>
+
+        <a class="icon-btn" href="search.html" aria-label="Tìm kiếm"><i data-lucide="search"></i></a>
+
+        <a class="btn btn-primary" href="post.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 20h4l10.5-10.5a2.1 2.1 0 0 0-4-4L4 16v4Z"></path>
+            <path d="m13.5 6.5 4 4"></path>
+          </svg>
+          Đăng tin
+        </a>
+
+        <button class="menu-btn" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="mainNavigation"><i data-lucide="menu"></i></button>
+
+      </div>
+    </div>
+
+    
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <span class="eyebrow">CỘNG ĐỒNG USTH</span>
+          <h1>
+            Tìm lại những điều
+            <span>quan trọng</span>
+          </h1>
+          <p>
+            Nền tảng hỗ trợ sinh viên USTH đăng tin tìm đồ thất lạc và đồ nhặt được.
+            Cùng nhau xây dựng một môi trường học tập an toàn và thân thiện hơn.
+          </p>
+
+          <a class="btn btn-primary hero-cta" href="post.html">
+            <i data-lucide="pencil"></i>
+            Đăng tin ngay
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    
+
+
+
+    <section class="content-section">
+      <div class="container home-grid">
+        <section class="recent-posts">
+          <div class="section-heading">
+            <h2>Bài đăng mới nhất</h2>
+            <span class="sort-note"><i data-lucide="arrow-down-wide-narrow"></i>Mới nhất trước</span>
+            <a href="lost.html">Xem tất cả <i data-lucide="arrow-right"></i></a>
+          </div>
+
+          <div class="post-grid" id="homePostGrid">
+            
+
+            
+
+            
+
+            
+          </div>
+        </section>
+
+        <aside class="categories">
+          <div class="section-heading">
+            <h2>Danh mục phổ biến</h2>
+            <a href="lost.html">Xem tất cả <i data-lucide="arrow-right"></i></a>
+          </div>
+
+          <div class="category-grid">
+            <a href="lost.html?category=Gi%E1%BA%A5y%20t%E1%BB%9D%20t%C3%B9y%20th%C3%A2n" class="category-card">
+              <i data-lucide="credit-card"></i>
+              <span>Giấy tờ tùy thân</span>
+            </a>
+            <a href="lost.html?category=Thi%E1%BA%BFt%20b%E1%BB%8B%20%C4%91i%E1%BB%87n%20t%E1%BB%AD" class="category-card">
+              <i data-lucide="laptop"></i>
+              <span>Thiết bị điện tử</span>
+            </a>
+            <a href="lost.html?category=T%C3%BAi%20x%C3%A1ch%2C%20balo" class="category-card">
+              <i data-lucide="shopping-bag"></i>
+              <span>Túi xách, balo</span>
+            </a>
+            <a href="lost.html?category=V%C3%AD%2C%20ti%E1%BB%81n%20b%E1%BA%A1c" class="category-card">
+              <i data-lucide="wallet-cards"></i>
+              <span>Ví, tiền bạc</span>
+            </a>
+            <a href="lost.html?category=S%C3%A1ch%20v%E1%BB%9F" class="category-card">
+              <i data-lucide="book-open"></i>
+              <span>Sách vở</span>
+            </a>
+            <a href="lost.html?category=Ph%E1%BB%A5%20ki%E1%BB%87n" class="category-card">
+              <i data-lucide="key-round"></i>
+              <span>Phụ kiện</span>
+            </a>
+            <a href="lost.html?category=Qu%E1%BA%A7n%20%C3%A1o" class="category-card">
+              <i data-lucide="shirt"></i>
+              <span>Quần áo</span>
+            </a>
+            <a href="lost.html?category=Kh%C3%A1c" class="category-card">
+              <i data-lucide="circle-ellipsis"></i>
+              <span>Khác</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+      <section class="portal-overview-section" id="portalStatusOverview">
+      <div class="container">
+        <div class="portal-status-head">
+          <div><span class="portal-kicker">TIỆN ÍCH SINH VIÊN</span><h2>Theo dõi hoạt động</h2><p>Tra cứu yêu cầu nhận đồ, theo dõi phản hồi và báo cáo sự việc trong trường.</p></div>
+          <div class="portal-overview-actions"><a class="btn btn-secondary" href="search.html"><i data-lucide="scan-search"></i>Tra cứu toàn hệ thống</a><a class="btn btn-primary" href="claims.html"><i data-lucide="badge-check"></i>Hồ sơ nhận đồ</a></div>
+        </div>
+        <div class="portal-status-grid">
+          <a href="lost.html" class="portal-status-card"><span class="portal-status-icon lost"><i data-lucide="search-x"></i></span><div><strong id="portalLostCount">0</strong><span>Tin thất lạc</span></div></a>
+          <a href="found.html" class="portal-status-card"><span class="portal-status-icon found"><i data-lucide="package-check"></i></span><div><strong id="portalFoundCount">0</strong><span>Đồ nhặt được</span></div></a>
+          <a href="claims.html" class="portal-status-card"><span class="portal-status-icon pending"><i data-lucide="badge-help"></i></span><div><strong id="portalPendingClaims">0</strong><span>Hồ sơ chờ duyệt</span></div></a>
+          <a href="claims.html" class="portal-status-card"><span class="portal-status-icon ready"><i data-lucide="qr-code"></i></span><div><strong id="portalReadyClaims">0</strong><span>Sẵn sàng nhận</span></div></a>
+          <a href="security-center.html" class="portal-status-card"><span class="portal-status-icon alert"><i data-lucide="shield-alert"></i></span><div><strong id="portalSecurityAlerts">0</strong><span>Cảnh báo khẩn</span></div></a>
+        </div>
+      </div>
+    </section>
+</main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="index.html"><img class="footer-logo" src="asset/images/brand/usth-lostfound-logo.png" alt="USTH"><div><strong>USTH Lost&amp;Found</strong><p>Kết nối để những giá trị được trở lại.</p></div></a><nav class="footer-nav" aria-label="Liên kết cuối trang"><a href="lost.html">Tin thất lạc</a><a href="found.html">Tin nhặt được</a><a href="contact.html">Liên hệ</a><a href="my-posts.html">Tin của tôi</a></nav><div class="footer-right"><small>© 2026 Lost&amp;Found USTH.<br>Dành cho cộng đồng sinh viên USTH.</small></div></div></footer>
+
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+<script src="asset/js/config.js"></script>
+<script src="asset/js/api.js"></script>
+<script src="asset/js/auth.js"></script>
+<script src="asset/js/main.js"></script>
+<script src="asset/js/portal-features.js"></script>
+<script src="asset/js/portal-complete.js"></script>
+<script src="asset/js/lostlink-ui.js"></script>
+</body>
+</html>

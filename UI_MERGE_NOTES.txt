@@ -1,0 +1,11 @@
+USTH LOST & FOUND — FULL-STACK REFACTOR
+
+- Giao diện HTML/CSS hiện tại được giữ lại.
+- Logic demo dùng localStorage đã được thay bằng REST API.
+- Frontend vẫn dùng Vanilla JavaScript để dễ học và dễ giải thích.
+- Backend dùng Node.js + Express + PostgreSQL.
+- Admin xác thực bằng JWT, không còn password hard-code.
+- Phần "Cách hoạt động" được xóa khỏi trang chủ và navigation.
+- Tất cả link Index.html được chuẩn hóa thành index.html.
+
+Xem README.md để chạy project từ đầu.
